@@ -1,46 +1,32 @@
 #include <stdio.h>
 
-int main()
-{
-  int cmarks;
-  printf("enter marks you ve obtained on C programming exams \n:");
-  scanf("%d", &cmarks);
+void main() {
 
-  if (cmarks >= 40)
-  {
-    printf("you have passed the exams");
-    if (cmarks >= 90)
-    {
-      printf("your grade is A++");
-    }
-    else if (cmarks >= 85 && cmarks < 90)
-    {
-      printf("your grade is A+");
-    }
-    else if (cmarks >= 80 && cmarks < 85)
-    {
-      printf("your grade is A");
-    }
-    else if (cmarks >= 75 && cmarks < 80)
-    {
-      printf("your grade is B");
-    }
-    else if (cmarks >= 50 && cmarks < 75)
-    {
-      printf("your grade is C");
-    }
-    else if (cmarks >= 40 && cmarks < 50)
-    {
-      printf("your grade is d+");
-    }
-    else
-    {
-      printf("your grade is d");
-    }
-  }
-  else
-  {
-    printf("study hard and focus hard because you are learnner");
-  }
-  return 0;
+   int a = 5;
+   int b = 20;
+   int c ;
+
+   // If both the operands are non-zero, then the condition becomes true. 
+   if ( a && b ) {
+      printf("Line 1 - Condition is true\n" );
+   }
+   
+   // If any of the two operands is non-zero, then the condition becomes true.    
+   if ( a || b ) {
+      printf("Line 2 - Condition is true\n" );
+   }
+   
+   /* lets change the value of  a and b */
+   a = 0;
+   b = 10;
+	
+   if ( a && b ) {
+      printf("Line 3 - Condition is true\n" );
+   } else {
+      printf("Line 3 - Condition is not true\n" );
+   }
+	
+   if ( !(a && b) ) {
+      printf("Line 4 - Condition is true\n" );
+   }
 }
