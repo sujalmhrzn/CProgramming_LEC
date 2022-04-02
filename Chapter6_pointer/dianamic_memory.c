@@ -1,3 +1,4 @@
+//sum of numbers in dianamic memory using malloc()
 #include<stdio.h>
 #include<stdlib.h>
  
